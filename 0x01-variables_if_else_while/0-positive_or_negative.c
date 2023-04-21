@@ -13,7 +13,7 @@ int main(void)
 
 	srand(time(0));
 
-	n = rand() - RAND_MAX / 2;
+        n = rand() - round(RAND_MAX / 2.0);
 
 	printf("%d\n", n);
 	if (n > 0)
