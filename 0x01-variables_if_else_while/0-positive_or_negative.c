@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+ * main - A function that generates a random number and checks
+ * if it is positive,negative,or zero
+ * Return: 0 (Success)
+ */
 int main(void)
 {
 	int n;
