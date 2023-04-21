@@ -9,10 +9,10 @@ int main(void)
 {
 int n, last_digit;
 
-srand(time(0);
+srand(time(0));
 
 n = rand() - RAND_MAX / 2;
-last_digit = n %
+last_digit = abs( % 10);
 printf("Last digit of %d is", n);
 if (last_digit > 5)
 {
@@ -25,7 +25,8 @@ printf("%d and is 0", last_digit);
 else
 {
 printf("%d is less than 6 and not 0", last_digit);
-} return (0);
+}
+return (0);
 }
 
 
