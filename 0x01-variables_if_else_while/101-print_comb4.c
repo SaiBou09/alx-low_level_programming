@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * main:A program that prints all possible combination of 3 digits
+ * main -Entry point
+ * Description: A program that prints all possible combination of 3 digits
  * separated by , followed by a new line
  * The 3 digits must be different
  * Only the smallest combination is printed
@@ -12,12 +13,16 @@
 int main(void)
 {
 int a = '0', b, c;
-for (a = '0'; a <= '7'; a++)
+while (a <= '9')
 {
-for (b = a + '1'; b <= '8'; b++)
+b = '0';
+while (b <= '9')
 {
-for (c = b + '1'; c <= '9'; c++)
+c = '0';
+while (c <= '9')
 {
+if (a != b && a < b && b != c && b < c)
+{	
 putchar(a);
 putchar(b);
 putchar(c);
@@ -25,6 +30,7 @@ if (a != '7' || b != '8' || c != '9')
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
