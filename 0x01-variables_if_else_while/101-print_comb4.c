@@ -12,7 +12,9 @@
  */
 int main(void)
 {
-int a = '0', b, c;
+int a = 0;
+int b;
+int c;
 while (a <= '9')
 {
 b = '0';
@@ -22,7 +24,7 @@ c = '0';
 while (c <= '9')
 {
 if (a != b && a < b && b != c && b < c)
-{	
+{
 putchar(a);
 putchar(b);
 putchar(c);
@@ -32,8 +34,11 @@ putchar(',');
 putchar(' ');
 }
 }
+c++;
 }
+b++;
 }
+a++;
 }
 putchar('\n');
 return (0);
