@@ -2,19 +2,11 @@
 /**
  * main -Entry point
  * Description: A program that prints all possible combination of 3 digits
- * separated by , followed by a new line
- * The 3 digits must be different
- * Only the smallest combination is printed
- * 012, 021, 102, 120, 210, 201 considered the same of 3 digits of 1, 2, 0
- * Only putchar is allowed
- * Putchar allowed only six times
  * Return: always 0
  */
 int main(void)
 {
-int a = 0;
-int b;
-int c;
+int a = 0, b, c;
 while (a <= '9')
 {
 b = '0';
