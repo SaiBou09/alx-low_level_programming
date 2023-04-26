@@ -12,7 +12,6 @@ int ln;
 int cn;
 for (ln = 0; ln <= 9; ln++)
 {
-_putchar('\n');
 for (cn = 'a'; cn <= 'z'; cn++)
 _putchar(cn);
 _putchar('\n');
