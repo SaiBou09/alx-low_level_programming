@@ -11,9 +11,9 @@ void more_numbers(void)
 int c;
 int d;
 int e;
-for (c = 0; c <= 10, c++)
+for (c = 1; c <= 10; c++)
 {
-for (d = 0; d <= 14, d++)
+for (d = 0; d <= 14; d++)
 {
 e = d;
 if (d > 9)
