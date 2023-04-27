@@ -2,17 +2,18 @@
 
 /**
  * print_line - draws a straight line in the terminal
- * @n: takes integer as input
+ *
+ * @n: number f times _ character printed
  */
 
 void print_line(int n)
 {
-int line;
+int lnChr;
 if (n <= 0)
 _putchar('\n');
 else
 {
-for (line = 0; line <= n; line++)
+for (lnChr = 1; lnChr <= n; lnChr++)
 _putchar('_');
 _putchar('\n');
 }
