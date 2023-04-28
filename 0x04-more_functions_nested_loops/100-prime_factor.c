@@ -37,6 +37,13 @@ int prmNu, largest;
 while (num % 2 == 0)
 {
 num = num / prmNu;
+
+/* num must be odd so we proceed to the next prime number (plus two) */
+for (prmNu = 3; prmNu <= _sqrt(num); prmNu += 2)
+{
+while (num % prmNu == 0)
+{
+num = num / prmNu;
 largest = prmNu;
 }
 }
