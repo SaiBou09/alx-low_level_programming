@@ -12,9 +12,13 @@
 void print_remaining_days(int month, int day, int year)
 {
 /**
- * leap year when it can be devided
+ * Prints leap year when it can be devided
  * by 100 and 400 or by 4 evenly
- */
+ * @param month The month (1-12) of the date to check.
+ * @param day The day (1-31) of the date to check.
+ * @param year The year (e.g. 2023) of the date to check.
+ * @return void
+*/
 if ((year % 100 == 0 && year % 400 == 0) || (year % 4 == 0))
 {
 if (month > 2 && day >= 60)
